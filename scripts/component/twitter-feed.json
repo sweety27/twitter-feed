@@ -1,0 +1,35 @@
+[
+{
+	"id": 1,
+	"name":"Kerem Seur",
+	"username":"@kerem",
+	"created_date":"Mon Oct 3 16:17:00 +0000 2016",
+	"text":"This is the most political I will ever get. I do think the US election system needs to be revamped. More parties should represent people.",
+	"retweet_count":0,
+	"profile_picture":"https://d13yacurqjgara.cloudfront.net/users/10149/avatars/normal/Kerem-Profile-Picture.png?1390931839",
+	"uploaded_video":"",
+	"retweeted":false,
+	"is_favorited":true
+},{
+	"id": 2,
+	"name":"AxelHerrmann",
+	"username":"@axel_herrmann",
+	"created_date":"Sun Oct 2 17:12:58 +0000 2016",
+	"text":"Cutest kitten ever. So so so cute",
+	"retweet_count":20,
+	"profile_picture":"https://lh4.googleusercontent.com/-tsH_-IuAa2E/AAAAAAAAAAI/AAAAAAAAABU/dvr40bN2qAY/photo.jpg",
+	"uploaded_video":"https://www.youtube.com/embed/0Bmhjf0rKe8",
+	"retweeted":true,
+	"is_favorited":true
+},{
+	"id": 2,
+	"name":"Kerem Seur",
+	"username":"@kerem",
+	"created_date":"Fri Sep 30 17:12:58 +0000 2016",
+	"text":"Obama was by far the best president/leader I've ever experienced in my life time in any country. Wish we had more Obamas in the world.",
+	"retweet_count":0,
+	"profile_picture":"https://d13yacurqjgara.cloudfront.net/users/10149/avatars/normal/Kerem-Profile-Picture.png?1390931839",
+	"uploaded_video":"",
+	"retweeted":false,
+	"is_favorited":false
+}]

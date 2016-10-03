@@ -1,0 +1,128 @@
+$bg-color:#fff;
+$secondary-color: #81A9CA;
+$black-color: #292f33;
+$primary-color: #605E58;
+$gray-color: #8899a6;
+$border-color:#e1e8ed;
+$font-stack : 'Open Sans', sans-serif;
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: #f5f8fa;
+	font-family: $font-stack;
+}
+
+.navbar{
+	.btn{
+	    cursor: pointer;
+	    display: inline-block;
+	    height: auto;
+	    vertical-align: middle;
+	    -webkit-appearance: none;
+	    color: inherit;
+	}
+	.divider{
+		border-left: 1px solid $border-color;
+	    position: absolute;
+	    top: 0;
+	    bottom: 0;
+	    left: 53px;
+	    height: 67px;
+	}
+	.icon{
+		border-color:$border-color;
+		padding: .5rem .6rem;
+	    font-size: .7rem;
+	}
+	input[type=text]{
+	    border:1px solid $border-color;
+	    border-radius: 50px;
+	    outline: 0;
+	}	
+}
+
+.container {
+    max-width: 52rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-container{
+	.fa-twitter{
+		color:$secondary-color;
+		font-size: 25px;
+		padding-top: .3rem;
+	}
+	span.search-icon{
+		position: absolute;
+	    top: 18px;
+	    right: 80px;
+	    display: block;
+	    width: 20px;
+	    height: 20px;
+	    cursor: pointer;
+	}
+	button.icon-search{
+		color: #66757f;
+	    font-size: 13px;
+	    height: auto;
+	    margin: 3px 0 0 0;
+	    padding: 0;
+	    width: auto;
+	    background: transparent;
+	    border: transparent;
+	}
+}
+
+.first-container,.bg {
+  	background-color: $bg-color;
+  	border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  	.bottom-border-color {
+    	border-bottom: 3px solid $secondary-color;
+  	}
+  	.heading{
+		color: $gray-color;
+		text-transform: uppercase;
+		font-size: 14px;
+   	}
+    .number{
+		color:$black-color;
+		font-weight: bold;
+	}
+}
+
+
+.tweet-container{
+	border-color: $border-color;
+	.profile-name{
+		color:$black-color;
+	}
+	.profile-username{
+		color:$gray-color;
+		font-weight: 300;
+	}
+	.time{
+		color:$gray-color;
+		font-size: 12px;
+	}
+	.retweet{
+		color: #19cf86;
+	}
+	.tweet-description{
+		color:$primary-color;
+		font-weight: 300;
+	}
+	.icon-container i{
+		color:#aab8c2;
+	}
+}
+
+
+@media (min-width: 40em){
+	.sm-hide {
+	    display: none!important;
+	}
+}

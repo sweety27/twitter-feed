@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #f5f8fa;
+  font-family: "Open Sans", sans-serif; }
+
+.navbar .btn {
+  cursor: pointer;
+  display: inline-block;
+  height: auto;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  color: inherit; }
+
+.navbar .divider {
+  border-left: 1px solid #e1e8ed;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 53px;
+  height: 67px; }
+
+.navbar .icon {
+  border-color: #e1e8ed;
+  padding: .5rem .6rem;
+  font-size: .7rem; }
+
+.navbar input[type=text] {
+  border: 1px solid #e1e8ed;
+  border-radius: 50px;
+  outline: 0; }
+
+.container {
+  max-width: 52rem;
+  margin-left: auto;
+  margin-right: auto; }
+
+.nav-container .fa-twitter {
+  color: #81A9CA;
+  font-size: 25px;
+  padding-top: .3rem; }
+
+.nav-container span.search-icon {
+  position: absolute;
+  top: 18px;
+  right: 80px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  cursor: pointer; }
+
+.nav-container button.icon-search {
+  color: #66757f;
+  font-size: 13px;
+  height: auto;
+  margin: 3px 0 0 0;
+  padding: 0;
+  width: auto;
+  background: transparent;
+  border: transparent; }
+
+.first-container, .bg {
+  background-color: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15); }
+  .first-container .bottom-border-color, .bg .bottom-border-color {
+    border-bottom: 3px solid #81A9CA; }
+  .first-container .heading, .bg .heading {
+    color: #8899a6;
+    text-transform: uppercase;
+    font-size: 14px; }
+  .first-container .number, .bg .number {
+    color: #292f33;
+    font-weight: bold; }
+
+.tweet-container {
+  border-color: #e1e8ed; }
+  .tweet-container .profile-name {
+    color: #292f33; }
+  .tweet-container .profile-username {
+    color: #8899a6;
+    font-weight: 300; }
+  .tweet-container .time {
+    color: #8899a6;
+    font-size: 12px; }
+  .tweet-container .retweet {
+    color: #19cf86; }
+  .tweet-container .tweet-description {
+    color: #605E58;
+    font-weight: 300; }
+  .tweet-container .icon-container i {
+    color: #aab8c2; }
+
+@media (min-width: 40em) {
+  .sm-hide {
+    display: none !important; } }

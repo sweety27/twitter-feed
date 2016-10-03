@@ -1,0 +1,66 @@
+<div class="clearfix mb2 bg navbar">
+  <div class="left py1">
+    <a href="#!" class="btn py1 px1 mr3"><img src="../images/tweet.png" height="30px"/>
+      <span class="divider"></span>
+    </a>
+    <a href="#!" class="btn py2 px2 m0 border circle icon mr2"><i class="fa fa-bell"></i></a>
+    <a href="#!" class="btn py2 px2 m0 border circle icon mr2"><i class="fa fa-envelope"></i></a>
+    <a href="#!" class="btn py2 px2 m0 border circle icon mr2"><i class="fa fa-hashtag"></i></a>
+  </div>
+  <div class="right py1">
+    <a href="#!" class="btn py1 px2 m0"><i class="fa fa-user fa-2x"></i></a>
+  </div>
+  <div class="clearfix sm-hide"></div>
+  <div class="overflow-hidden px2 py2 center nav-container">
+    <i class="fa fa-twitter px1"></i>
+    <input type="text" class="right fit field white bg-darken-1 py1 px1" placeholder="Search">
+    <span class="search-icon">
+      <button type="submit" class="fa fa-search icon-search"></button>
+    </span>
+  </div>
+</div>
+<div class="container">
+  <div class="flex center bg first-container mb2">
+    <div class="col-6 md-col-3 border-box p2 bottom-border-color">
+      <div class="p1 heading">Tweets</div>
+      <div class="number">200</div>
+    </div>
+    <div class="col-6 md-col-3 border-box p2">
+      <div class="p1 heading">Photos/Videos</div>
+      <div class="number">200</div>
+    </div>
+    <div class="col-6 md-col-3 border-box p2">
+      <div class="p1 heading">Following</div>
+      <div class="number">200</div>
+    </div>
+    <div class="col-6 md-col-3 border-box p2">
+      <div class="p1 heading">Followers</div>
+      <div class="number">1M</div>
+    </div>
+  </div>
+  <div class="bg border-bottom bottom-color tweet-container" ng-repeat="info in tweet.response">
+    <div class="flex mb2 p2">
+      <img src="{{info.profile_picture}}" width="50" height="50" class="flex-none mr2 circle" />
+      <div class="flex-auto">
+        <i class="fa fa-refresh px1 retweet left" ng-if="info.retweeted"></i>
+        <div class="left profile-name">
+          <strong>{{info.name}}</strong> 
+          <span class="profile-username">{{info.username}}</span></div>
+        <div class="right time">{{info.time}}</div>
+        <div class="clearfix"></div>
+        <p class="mt1 mb2 tweet-description">{{info.text}}</p>
+        <iframe width="640" height="360" src="{{info.uploaded_video}}" frameborder="0" allowfullscreen ng-if="info.uploaded_video"></iframe>
+        <div class="left icon-container">
+          <i class="fa fa-share px1"></i>
+          <i class="fa fa-star px1" ng-if="info.is_favorited"></i>
+          <i class="fa fa-star-o" ng-if="!info.is_favorited"></i>
+          <i class="fa fa-refresh px1">&nbsp;<span ng-if="info.retweeted">{{info.retweet_count}}</span></i>
+          <i class="fa fa-ellipsis-h px1"></i>
+        </div>
+        <div class="right icon-container">
+          <i class="fa fa-expand"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
